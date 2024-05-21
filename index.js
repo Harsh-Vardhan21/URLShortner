@@ -12,7 +12,7 @@ const userRoute = require("./routes/user");
 const app = express();
 const PORT = 8001;
 
-connectToMongoDB("mongodb://localhost:27017/urlshortner").then(() =>
+connectToMongoDB("mongodb://127.0.0.1:27017/urlshortner").then(() =>
   console.log("Mongodb connected")
 );
 
